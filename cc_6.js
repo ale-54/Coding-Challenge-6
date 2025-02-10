@@ -72,3 +72,14 @@ function createExpenseTracker() {
 let tracker = createExpenseTracker();
 console.log(tracker(200)); // Expected output: "Total Expenses: $200"
 console.log(tracker(150)); // Expected output: "Total Expenses: $350"
+
+ //Task 8: Recursion in JavaScript
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >= 10) {
+        return `Years to Level 10: 0`;
+    };
+    let years = (10 - employeeLevel)* 2; //calculating how many years to reach level 10, each promotion takes 2 years
+    return `Years to Level 10: ${years}`;
+};  //function to find how many years until promotion
+console.log(calculateYearsToPromotion(7)); // Expected output: "Years to Level 10: 6"
+console.log(calculateYearsToPromotion(5)); // Expected output: "Years to Level 10: 10"
