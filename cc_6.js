@@ -18,13 +18,18 @@ console.log(calculateSalesTax(500, 0.1));  // Expected output: "Sales Tax: $50"
 const calculateBonus = (salary, performanceRating) => {
     let bonus;
     if (performanceRating === "Excellent") {
-        bonus = salary * .2;
+        bonus = salary * .2; //20% bonus
     } else if (performanceRating === "Good") {
-        bonus = salary * .1;
+        bonus = salary * .1; //10% bonus
     } else if (performanceRating === "Average") {
-        bonus = salary * .05;
+        bonus = salary * .05; //5% bonus
     }; //set up how much bonus will be added to salary according to the performance rating
     return `Bonus: $${bonus}`; //labeling the bonuses
 };
 console.log(calculateBonus(5000, "Excellent")); // Expected output: "Bonus: $1000"
 console.log(calculateBonus(7000, "Good")); // Expected output: "Bonus: $700"
+
+//Task 4: Parameters and Arguments
+function calculateSubscriptionCost(plan, months, discount = 0) {
+
+}
