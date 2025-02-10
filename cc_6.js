@@ -31,5 +31,15 @@ console.log(calculateBonus(7000, "Good")); // Expected output: "Bonus: $700"
 
 //Task 4: Parameters and Arguments
 function calculateSubscriptionCost(plan, months, discount = 0) {
-
-}
+    let cost;
+    if (plan === "Basic") {
+        cost = 10; //$10/month for subscription
+    } else if (plan === "Premium") {
+        cost = 20; //$20/month for subscription
+    } else if (plan === "Enterprise") {
+        cost = 50; //$50/month for subscription
+    } let totalCost = (cost * months) - discount; //formula
+    return `Total Cost: $${totalCost}`; //labeling the total cost
+};
+console.log(calculateSubscriptionCost("Basic", 6, 10)); // Expected output: "Total Cost: $50"
+console.log(calculateSubscriptionCost("Premium", 12, 0)); // Expected output: "Total Cost: $240"
